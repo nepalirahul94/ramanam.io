@@ -1,0 +1,312 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+.container{
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+#menuToggle {
+	display: none;
+}
+
+.nav{
+	display: grid;
+	grid-template-columns: auto auto; 
+	justify-content: space-between;
+	background: #ffcb05;;
+	padding: 10px;
+
+}
+
+.nav-bar{
+	margin:10px;
+	color: white;
+}
+
+.nav-bar ul li{
+	padding: 10px;
+	display: inline;
+}
+
+.navbar-right ul li{
+	list-style: none;
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap:10px;
+}
+
+.nav-bar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.08em;
+	font-weight: bold;
+}
+
+
+
+.my-carousel{
+  width:100%;
+  /*margin: 0 auto;*/
+  position: relative;
+}
+
+.my-carousel-item img{
+  width: 100%;
+  height: 500px;
+  /*object-fit: cover;*/
+}
+
+.my-carousel .owl-nav{
+  position: absolute;
+  top: 45%;
+  width:95%;
+  margin: 0 auto;
+  left:0;
+  right:0;
+  display: flex;
+  justify-content: space-between;
+}
+.my-carousel .nav-main-slider-btn{
+  color: #fff !important;
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 30px !important;
+  border: none;
+  outline: none;
+  
+}
+.my-carousel .owl-dots{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.my-carousel .owl-dot{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff !important;
+  margin: 10px;
+  outline: none;
+}
+
+.h-info{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 50px 0;
+}
+
+.h-img img{
+	width: 100%;
+}
+
+.h-text{
+	background: #fcb040;
+	/*padding: 20px;*/
+}
+	/*Ramanam blue : #0f75bc;;
+/*}*/
+
+/*.h-text h2{
+	font-size: 38px;
+	text-transform: uppercase;
+	padding:20px 0px 20px 0;
+}
+
+.h-text p{
+	font-size: 16px;
+	line-height: 1.5em;
+	margin-bottom: 30px;
+}*/
+
+/*.h-text a{
+	background: #0f75bc;
+	padding: 14px;
+	text-decoration: none;
+	justify-content: center;
+	display: grid;
+	width: 50%;
+	margin-left: 120px;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white;*/
+/*}*/
+
+.room-main{
+	margin-bottom: 15px;
+}
+
+.room-main h2{
+	font-size: 48px;
+	text-align: center;
+	padding: 20px;
+}
+
+.room-main p{
+	padding: 40px;
+}
+
+.room-f{
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-gap: 25px;
+}
+
+.room-ff img{
+	width: 100%;
+}
+
+.room-ff h2{
+	font-size: 16px;
+}
+
+.room-s{
+	display: grid;
+	grid-template-columns: 32% 32%;
+	grid-gap: 25px;
+	justify-content: center;
+}
+
+.services{
+	display: grid;
+	grid-template-columns: repeat(4,255px);
+	grid-gap: 30px;
+}
+
+.service-p{
+	padding:35px;
+}
+
+
+.service-box i{
+	font-size: 80px;
+	color: #fcb040;
+	transition:0.4s;
+	padding: 30px;
+}
+
+.service-box {
+	/*border: 1px solid grey;*/
+	box-shadow: 2px 2px 2px 2px grey;
+	padding: 10px 50px;
+	text-align: justify;
+	transition: transform 0.7s;
+}
+
+.service-box i:hover {
+	-o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+
+.service-box:hover {
+	transform: translateY(-10px);
+}
+
+.button-more{
+	display: grid;
+	justify-content: center;
+    border: 2px solid grey;
+    width: 25%;
+    box-sizing: border-box;
+    grid-template-columns: auto;
+    margin: 40px auto;
+    padding: 10px;
+    background: #fcb040;
+}
+
+.button-more a {
+	text-decoration: none;
+	color: #0f75bc;
+}
+
+.button-more:hover{
+	background: white;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
+@media only screen and (max-width: 768px) {
+
+.container{
+	margin: 5px 0 0 0;
+}
+
+.nav{
+	width: 100%;
+}
+
+.nav-bar{
+	display: none;
+}
+
+.h-info{
+	display: grid;
+	grid-template-columns: auto;
+	margin: 15px;
+}
+
+.h-info a{
+	margin: 10px 0 0 0;
+}
+
+.h-img{
+	display: none;
+}
+
+.room-f {
+	display: grid;
+	grid-template-columns: auto;
+	margin: 17px;
+}
+
+.room-s { 
+	display: grid;
+	grid-template-columns: auto;
+	/*margin: 17px;*/
+	background-size: contain;
+}
+
+.room-ff img{
+	width: 100%;
+}
+
+.services {
+	display: grid;
+	grid-template-columns: auto;
+	margin: 17px;
+}
+
+.service-box{
+	width: 100%;
+	margin: 2px;
+	text-align: center;
+}
+
+.service-main p{
+	text-align: center;
+	padding: 20px;
+}
+
+/*.service-box p{*/
+	/*text-align:justify;*/
+/*}*/
+
+}
